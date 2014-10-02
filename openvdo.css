@@ -232,12 +232,15 @@ section.call {
 }
 .me {
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  top: 60px;
+  right: 20px;
   height: 150px;
   min-width: 50px;
-  background-color: #fff;
+  background-color: #000;
+  color: #CF3A53;
   text-align: center;
+  border: 1px solid #CF3A53;
+  border-radius: 2px;
 }
 
 /* Chat */
