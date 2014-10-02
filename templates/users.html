@@ -1,0 +1,11 @@
+  <section class="users">
+    <h3>Who do you wanna call?</h3>
+    <input type="search" ng-model="search" placeholder="Search for a nickname..." autofocus>
+    <ul>
+      <li ng-repeat="user in users | filter:search" class="{{firstLetter(user)}}"><a href="#/call/{{user}}">{{user}}</a></li>
+    </ul>
+  </section>
+
+  <div class="incoming">
+    <p><i class="ring"></i>Call from <strong>Cosmin</strong></p>
+  </div>

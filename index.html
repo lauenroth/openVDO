@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>OpenVDO</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="OpenVDO">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name='apple-touch-fullscreen' content='yes'>
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" sizes="64x64" href="images/video.png">
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+  <link href="openvdo.css" rel="stylesheet">
+</head>
+<body ng-app="openVDO">
+
+<header class="main">
+  OpenVDO
+  <span>{{nickname}}</span>
+</header>
+
+<main ui-view>
+
+
+  <section class="call">
+    <div class="video">loading video...</div>
+    <video autoplay="true" class="me">Me</video>
+  </section>
+
+
+  
+</main>
+
+
+<script src="js/angular.min.js"></script>
+<script src="js/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+
+<script type="text/javascript" src="js/openvdo.js"></script>
+<script type="text/javascript" src="controllers/usersCtrl.js"></script>
+<script type="text/javascript" src="controllers/loginCtrl.js"></script>
+<script type="text/javascript" src="controllers/callCtrl.js"></script>
+
+</body>
+</html>
